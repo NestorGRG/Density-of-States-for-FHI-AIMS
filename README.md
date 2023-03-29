@@ -23,5 +23,5 @@ The use of this program is very simple:
 2.  The above mentioned python modules are installed.
 3.  In the Plotting section, the user is able to select the style of the plot. Including: color, linewidth, marker, font, etc.
 4.  In the same section, the user must indicate which atom species and which orbital angular momentum (*l* number) is selected for the plot. The program creates a list of atom species and the number of atoms per species. The index of "dosaux", "dosauxup" and "dosauxdn", that contains the sum of the PDOS per atom species, is the same index than the list of list of atom species and the number of atoms per species, which is printed when the user runs the program. e.g. index = 0: C, index = 1: Ti.
-5.  The user must change the labels of the leyend and add or remove them according to the properties of the desired system.
+5.  The user must change the labels of the leyend and add or remove them according to the properties of the studied system.
 6.  The user can change the name of the generated png file by changing the variable "name".
