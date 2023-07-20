@@ -168,19 +168,19 @@ if spin == 2:
         dosauxdn[i] = zeroaux[i].sub(dosauxdn[i])
 
 #Saving DOS per species in files of up and down
-for i in range(len(dic_list_atoms)):
-    name_up = 'dos_'+str(dic_list_atoms[i][0])+'.txt'
-    with open(name_up, "w") as f:
-        for item in dosauxup:
-            string = item.to_string(header =True, index=True)
-            f.write(f"{string}\n")
-if spin == 2:
-    for i in range(len(dic_list_atoms)): 
-        name_dn = 'dos_'+str(dic_list_atoms[i][0])+'_down.txt'
-        with open(name_dn, "w") as f:
-            for item in dosauxdn:
-                string = item.to_string(header =True, index=True)
-                f.write(f"{string}\n")
+#for i in range(len(dic_list_atoms)):
+#    name_up = 'dos_'+str(dic_list_atoms[i][0])+'.txt'
+#    with open(name_up, "w") as f:
+#        for item in dosauxup:
+#            string = item.to_string(header =True, index=True)
+#            f.write(f"{string}\n")
+#if spin == 2:
+#    for i in range(len(dic_list_atoms)): 
+#        name_dn = 'dos_'+str(dic_list_atoms[i][0])+'_down.txt'
+#        with open(name_dn, "w") as f:
+#            for item in dosauxdn:
+#                string = item.to_string(header =True, index=True)
+#                f.write(f"{string}\n")
 
 #Plot
 #Plotting Style
